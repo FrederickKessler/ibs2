@@ -1,0 +1,97 @@
+body {
+  padding-top: 50px;
+  background-color: #222222;
+}
+
+.nav li {
+  display: inline;
+  font-size: 1.5em;
+}
+
+.jumbotron {
+  height: 200px;
+  background-image: url('src/jumbo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+.jumbotron .container {
+  position: relative;
+}
+
+.jumbotron h1 {
+  padding-top: 50px;
+  color: #222222;
+  font-size: 4em;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.jumbotron p {
+  font-size: 5em;
+  color: #000;
+}
+
+.learn-more {
+  background-color: #222222;
+  margin: 0px;
+}
+.learn-more img {
+  background-color: #222222;
+}
+.learn-more h2 {
+  color: #fff;
+  font-family: 'Shift', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #fff;
+}
+
+.learn-more p {
+  color: grey;
+  font-size: 1.5em;
+}
+
+.learn-more th {
+  color: grey;
+  font-size: 1.5em;
+}
+
+.learn-more label {
+  color: grey;
+  font-size: 1.5em;
+}
+
+.wiki {
+  color: #000;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+.scale1 {
+  width: 90%; 
+  height: auto;
+}
+
+.scale2 {
+  padding: 2em;
+  width: 70%; 
+  height: auto;
+}
+
+.current {
+  color: grey;
+  font-size: 1.5em;
+}

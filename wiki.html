@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wikipedia Volltext- und Artikelsuche</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">  
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="about.html">Über mich</a></li>
+            <li><a href="module.html">Bisherige Module</a></li>
+            <li><a href="https://www.codecademy.com/frederick.keler" target="_blank">Codecademy Profil</a></li>
+            <li class="active"><a href="wiki.html">Wikipedia Suche</a> </li>
+            <li><a href="app.html">Arsnova App</a> </li>
+            <li><a href="impressum.html">Impressum</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+    <div class="jumbotron">
+      <div class="container">
+        <h1 tabindex=1>Wikipedia Suche</h1>
+      </div>
+    </div> 
+
+    <div class="learn-more">
+	  <div class="container">
+		<div class="row">
+	  	  <div class="col-md-12">
+			<div class="wiki">
+				<form action="http://de.wikipedia.org/wiki" method="post" target="_blank" name="frmWiki">	
+					<br>
+					<br>
+					<label for="search">Bitte Suchtext für Volltextsuche eingeben</label>		
+					<table>
+						<tbody>
+							<tr>
+								<th>Wikipedia Volltext Suche</th>
+								<td>
+									<input maxlength="255" size="25" name="xsearch" id="search" >
+								</td>
+								<td>
+									<input onclick="window.document.frmWiki.action = 'https://de.wikipedia.org/w/index.php?title=Spezial%3ASuche&amp;profile=default&amp;search=' + document.frmWiki.xsearch.value + '&amp;fulltext=Search';" value="Suche" name="btnG" type="submit">
+								</td>
+								
+							</tr>
+						</tbody>
+					</table>
+					<br>
+					<label for="search2">Bitte Suchtext für Artikelsuche eingeben</label>	
+					<table>
+						<tbody>
+							<tr>
+								<th>Wikipedia Artikel Suche</th>
+								<td>
+									<input maxlength="255" size="25" name="xsearch2" id="search2" >
+								</td>
+								<td>
+									<input onclick="window.document.frmWiki.action = 'http://de.wikipedia.org/wiki/' + document.frmWiki.xsearch2.value;" value="Suche" name="btnG" type="submit">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			  </div>
+			<br>
+			<a href="http://wave.webaim.org/report#/http://ibskessler.cloudcontrolled.com/wiki.html" target="_blank"
+			title="Wave Tool">
+			<img height="32" width="88" 
+			src="http://www.w3.org/WAI/wcag1AAA"
+			alt="Level Triple-A conformance icon, 
+			W3C-WAI Web Content Accessibility Guidelines 1.0"></a>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="docs.min.js"></script>
+    
+  </body>
+</html>
